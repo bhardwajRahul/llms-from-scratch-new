@@ -135,9 +135,7 @@ We compute the dot product between all Queries and Keys to measure how well they
 
 The result is scaled by the square root of the key dimension to keep values stable during training.
 
-$
-\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
-$
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 
 Each token now contains information gathered from other tokens in the sequence. This is the core idea behind transformers.
 
@@ -153,13 +151,11 @@ Causal self attention solves this using a mask that blocks access to future toke
 
 The mask looks like this:
 
-$
-\begin{bmatrix}
+$$\begin{bmatrix}
 1 & 0 & 0 \\
 1 & 1 & 0 \\
 1 & 1 & 1
-\end{bmatrix}
-$
+\end{bmatrix}$$
 
 A value of:
 
@@ -238,7 +234,7 @@ Residual connections, also called skip connections, help solve this problem. Ins
 
 The original input is added back to the output of a layer:
 
-$\text{Output} = x + \text{Sublayer}(x)$
+$$\text{Output} = x + \text{Sublayer}(x)$$
 
 Transformers use residual connections around both:
 
@@ -266,21 +262,21 @@ This makes training faster, more stable, and more reliable.
 
 Suppose a token embedding is:
 
-$x = [x_1, x_2, x_3]$
+$$x = [x_1, x_2, x_3]$$
 
 LayerNorm computes:
 
 The mean
 
-$\mu = \frac{1}{n}\sum x_i$
+$$\mu = \frac{1}{n}\sum x_i$$
 
 The variance
 
-$\sigma^2 = \frac{1}{n}\sum (x_i - \mu)^2$
+$$\sigma^2 = \frac{1}{n}\sum (x_i - \mu)^2$$
 
 The normalized output
 
-$\hat{x}_i =\frac{x_i - \mu}{\sqrt{\sigma^2 + \epsilon}}$
+$$\hat{x}_i =\frac{x_i - \mu}{\sqrt{\sigma^2 + \epsilon}}$$
 
 This transforms the features so they have approximately zero mean and unit variance.
 
