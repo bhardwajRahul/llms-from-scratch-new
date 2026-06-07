@@ -26,7 +26,7 @@ Dive into the hands-on examples for each LLM component using interactive Jupyter
 | Token Embeddings       | [02_token_embeddings.ipynb](./02_token_embeddings.ipynb) |
 | Positional Embeddings  | [03_positional_embeddings.ipynb](./03_positional_embeddings.ipynb) |
 | Self Attention Mechanism  | [04_self_attention_mechanism.ipynb](./04_self_attention_mechanism.ipynb) |
-| Multi-Head Self Attention | [05_multi_head_self_attention.ipynb](./05_multi_head_self_attention.ipynb) |
+| Masked Multi-Head Attention | [05_masked_multi_head_attention.ipynb](./05_masked_multi_head_attention.ipynb) |
 | FeedForward Neural Networks| [06_feedforward_neural_networks.ipynb](./06_feedforward_neural_networks.ipynb) |
 | Residual Connections      | [07_residual_connections.ipynb](./07_residual_connections.ipynb) |
 | Layer Normalization       | [08_layer_normalization.ipynb](./08_layer_normalization.ipynb) |
@@ -36,4 +36,4 @@ Dive into the hands-on examples for each LLM component using interactive Jupyter
 ## Read the full breakdown
 
 - [A Visual Guide to LLMs (Part 1): Text to Numbers: Tokenization and Embeddings](https://awesomeneuron.substack.com/p/a-visual-guide-to-llms-part-1)
-- A Visual Guide to LLMs (Part 2): Inside the Transformer Architecture
+- [A Visual Guide to LLMs (Part 2): Inside the Transformer Architecture](https://awesomeneuron.substack.com/p/a-visual-guide-to-llms-part-2)
